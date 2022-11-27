@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+    <link rel="stylesheet" href="/styles/main.scc">
+    <title>4-oy 1-loyiha</title>
+</head>
+<body>
+    <header class="bg-danger ">
+        <div class="container">
+            <nov class=" col-12 w-100">
+                <h1 class="ms-3 pt-2 pb-2">O'quv qurollar do'koni</h1>
+            </nov>
+            
+        </div>
+    </header>
+    <main>
+
+
+
+
+        <div class="modal-window modal-hide">
+
+            <div class="modal-container position-relative p-4 rounded-3">
+               <div class="btn btn btn-danger position-absolute end-0 me-4" id="close">X</div>
+               <div class="modal-content container">
+   
+                
+   
+   
+               </div>
+            </div>
+         </div>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3  h-100">
+                        <form action="" class="formSubmit">
+                            <label for="idName" class=" w-100 p-3 fs-5">Mahsulot nomi
+                                <input type="text" class="form-control w-100 p-3" placeholder="Mahsulot nomi" id="idName">
+                            </label>
+                            <label for="idReyting" class="form-label w-100  p-3">Mahsulot  reytingi
+                                <input type="number" name="" class="form-control  p-3" id="idReyting" min="1" max="10">
+                            </label>
+                            <select id="idCategory" class="form-select my-3 w-100 p-3 ">
+                                <option value="all" selected disabled>Mahsulot turi</option>
+                             </select>
+                             <button type="submit" class="btn btn-success w-100 p-3 mb-4">Search</button> 
+                             <h4 class="info__number"></h4>
+                        </form>
+                    </div>
+                    <div class="col-7 p-3 bg-light m-2" >
+                        <div class="salom">
+
+                        </div>
+
+                        
+                    </div>
+                    <div class="col  mt-3 p-2 bookmarkList ms-3 ">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="/baza.js"></script>
+<script src="/scripts/utils.js"></script>
+<script src="/script.js"></script>
+
+</body>
+
+</html>

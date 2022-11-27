@@ -1,0 +1,79 @@
+.salom{
+    display: grid;
+    grid-template-columns: repeat(Auto-fill, minmax(320px, 1fr));
+    gap: 10px;
+ 
+ }
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+ }
+ 
+
+
+ .modal-window {
+   width: 100% !important;
+   min-height: 100% !important;
+   background-color: rgba(0, 0, 0, 0.793);
+   backdrop-filter: blur(16px);
+   position: fixed;
+   top: 0;
+   z-index: 99999;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.2s linear;
+ }
+ 
+ .modal-window .modal-container {
+   width: 65%;
+   height: 70vh;
+   background-color: #fff;
+   box-shadow: 0 0 10px 0px rgb(157, 157, 157);
+ }
+ 
+ .modal-hide {
+  
+   transform: translateY(-200%);
+ }
+ .modal-hidee {
+   transform: translateY(-200%);
+ }
+ #close {
+   cursor: pointer;
+   position: absolute;
+   z-index: 2222222222;
+ }
+ 
+ .animate {
+   animation-name: animateModal;
+   animation-duration: 1s;
+   animation-timing-function: ease-in;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+   animation-direction: alternate;
+ }
+ 
+ @keyframes animateModal {
+   0% {
+     transform: scale(1) translateY(0);
+   }
+ 
+   25% {
+     transform: scale(0.95) translateY(-10px);
+   }
+ 
+   50% {
+     transform: scale(1) translateY(10px);
+   }
+ 
+   75% {
+     transform: scale(0.95) translateY(-10px);
+   }
+ 
+   100% {
+     transform: scale(1) translateY(0);
+   }
+ }
